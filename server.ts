@@ -1,7 +1,7 @@
 import { Hono } from 'hono'
 import { serve } from 'bun'
-import { processDocumentWithPaperless } from './utils'
-import type { PaperlessArchiveResult } from "./utils";
+import { processDocumentWithPaperless } from './paperless'
+import type { PaperlessArchiveResult } from "./paperless";
 
 const HELPER_PORT = import.meta.env.PAPERLESS_HELPER_PORT;//3137;
 const app = new Hono()
